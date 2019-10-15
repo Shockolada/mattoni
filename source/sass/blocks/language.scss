@@ -1,0 +1,22 @@
+.language__list {
+  display: flex;
+  justify-content: center;
+  @include list-reset;
+  margin-bottom: 40px;
+  margin-right: -10px;
+}
+
+.language__item {
+  margin-right: 10px;
+}
+
+.language {
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $desktopS) {
+  .language__list {
+    margin: 0;
+  }
+}

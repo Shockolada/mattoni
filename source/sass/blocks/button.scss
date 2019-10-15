@@ -1,0 +1,38 @@
+.button {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  // margin: 0 auto;
+  padding: 13px;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: lowercase;
+  color: $color-text-white;
+  background-color: $color-accent;
+  overflow: hidden;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+
+  transition: background-color 0.2s linear;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $color-dark;
+}
+
+.button--dark {
+  background-color: $color-dark;
+
+  &:hover {
+    background-color: $color-accent;
+  }
+}
+
+.button--transparent {
+  background-color: rgba($color-white, 0.35);
+}

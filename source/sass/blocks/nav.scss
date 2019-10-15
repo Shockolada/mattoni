@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  @include list-reset;
+  margin-right: -20px;
+  margin-bottom: -10px;
+}
+
+.nav__item {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.nav__link {
+  padding: 5px;
+}
+
+@media (min-width: $tablet) {
+  .nav {
+    margin-right: -30px;
+  }
+
+  .nav__item {
+    margin-right: 30px;
+  }
+}

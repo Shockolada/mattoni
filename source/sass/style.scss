@@ -1,0 +1,32 @@
+/* BASIC PAGE NEEDS */
+@import "basic/variables.scss";
+@import "basic/fonts.scss";
+@import "basic/normalize.scss";
+@import "libs/swiper.scss";
+@import "libs/jquery.fancybox.scss";
+@import "basic/scaffolding.scss";
+@import "basic/container.scss";
+@import "basic/section.scss";
+@import "mixins/mixins.scss";
+
+/* BLOCKS */
+@import "blocks/link.scss";
+@import "blocks/button.scss";
+@import "blocks/hamburger-btn.scss";
+@import "blocks/close-btn.scss";
+@import "blocks/title.scss";
+@import "blocks/overlay.scss";
+@import "blocks/modal.scss";
+@import "blocks/basket.scss";
+@import "blocks/form.scss";
+@import "blocks/text-content.scss";
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/language.scss";
+
+@import "blocks/menu.scss";
+
+@import "blocks/page-footer.scss";
+@import "blocks/nav.scss";
+@import "blocks/webit.scss";

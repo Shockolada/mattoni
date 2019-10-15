@@ -1,0 +1,58 @@
+.basket-mob {
+  line-height: 0;
+  text-decoration: none;
+}
+
+.basket {
+  display: none;
+  text-decoration: none;
+}
+
+.basket-mob .basket__icon {
+  width: 35px;
+  height: 35px;
+  fill: $color-text;
+}
+
+.basket__count {
+  display: none;
+}
+
+@media(min-width: $desktopS) {
+
+  .basket-mob {
+    display: none;
+  }
+
+  .basket {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 110px;
+    padding: 4px;
+    padding-left: 15px;
+    padding-right: 5px;
+    border: 1px solid $color-accent;
+    border-radius: 30px;
+  }
+
+  .basket__count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: $color-accent;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .basket__icon {
+    width: 36px;
+    height: 36px;
+    fill: $color-accent;
+  }
+
+}

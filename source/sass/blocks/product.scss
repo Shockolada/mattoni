@@ -58,12 +58,12 @@
 
 .product__price-info {
   margin: 0;
-  font-style: 18px;
+  font-size: 18px;
   font-weight: 500;
 }
 
 .product__price {
-  font-style: 25px;
+  font-size: 25px;
   font-weight: 700;
   color: $color-accent;
 }
@@ -117,7 +117,7 @@
     font-size: 14px;
     font-weight: 600;
   }
-  
+
   p {
     line-height: 1.3;
   }

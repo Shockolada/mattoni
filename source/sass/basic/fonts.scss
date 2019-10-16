@@ -1,16 +1,36 @@
 /* FONTS */
 @font-face {
-  font-family: "Futura";
-  src: url('../fonts/futurastd-light.woff') format('woff'),
-    url('../fonts/futurastd-light.otf') format('opentype');
+  font-family: "baufra";
+  // src: url('../fonts/Baufra-Light.woff') format('woff'),
+  //   url('../fonts/Baufra-Light.woff2') format('woff2'),
+    src: url('../fonts/baufra_light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Futura";
-  src: url('../fonts/futurastd-medium.woff') format('woff'),
-    url('../fonts/futurastd-medium.otf') format('opentype');
+  font-family: "baufra";
+  // src: url('../fonts/baufra.woff') format('woff'),
+  //   url('../fonts/baufra.woff2') format('woff2'),
+    src: url('../fonts/baufra.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "baufra";
+  // src: url('../fonts/baufra_medium.woff') format('woff'),
+  //   url('../fonts/baufra_medium.woff2') format('woff2'),
+    src: url('../fonts/baufra_medium.otf') format('opentype');
   font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "baufra";
+  // src: url('../fonts/baufra_semi_bold.woff') format('woff'),
+  //   url('../fonts/baufra_semi_bold.woff2') format('woff2'),
+    src: url('../fonts/baufra_semi_bold.otf') format('opentype');
+  font-weight: 600;
   font-style: normal;
 }

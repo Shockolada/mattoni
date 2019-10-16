@@ -25,7 +25,7 @@ body {
 }
 
 .page-content {
-  padding-top: 90px;
+  padding-top: 65px;
 }
 
 img {
@@ -49,15 +49,15 @@ img {
   overflow: hidden;
 }
 
-@media(min-width: $desktopXS) {
+@media(min-width: $desktopS) {
   .page-content {
-    padding-top: 100px;
+    padding-top: 105px;
   }
 }
 
 
-@media(min-width: $desktopL) {
-  .page-content {
-    padding-top: 100px;
-  }
-}
+// @media(min-width: $desktopL) {
+//   .page-content {
+//     padding-top: 100px;
+//   }
+// }

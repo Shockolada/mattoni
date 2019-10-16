@@ -1,0 +1,19 @@
+.water-types__list {
+  @include list-reset;
+  margin-bottom: -15px;
+}
+
+@media (min-width: $tablet) {
+  .water-types__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+  }
+}
+
+@media (min-width: $desktopS) {
+  .water-types__list {
+    margin-right: -20px;
+    margin-bottom: -20px;
+  }
+}

@@ -1,0 +1,21 @@
+.cart-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  min-width: 50px;
+  height: 30px;
+  margin-left: 15px;
+  padding: 0;
+}
+
+.cart-btn__icon {
+  fill: $color-text;
+
+  transition: fill 0.2s linear;
+}
+
+.cart-btn:hover .cart-btn__icon,
+.cart-btn:focus .cart-btn__icon {
+  fill: $color-accent;
+}

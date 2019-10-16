@@ -5,7 +5,7 @@
 
 <body>
 
-  @@include('./html-partials/page-header.html')
+  @@include('./html-partials/page-header_index.html')
 
   <!-- Main Content
   ================================================== -->
@@ -21,10 +21,35 @@
 
   @@include('./html-partials/page-footer.html')
 
-  
+
   <!-- Java Script
   ================================================== -->
   <script src="js/main.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".scroll-link").on("click", function (evt) {
+        evt.preventDefault();
+        var id = $(this).attr('href'),
+          top = $(id).offset().top - 80;
+        $('body,html').animate({
+          scrollTop: top
+        }, 300);
+        // $('.menu').slideUp(200);
+      });
+    })
+
+  </script>
+
+  <script>
+      var myHash = location.hash; //получаем значение хеша
+      location.hash = ''; //очищаем хеш
+      if (myHash[1] != undefined) { //проверяем, есть ли в хеше какое-то значение
+        $('html, body').animate({
+          scrollTop: $(myHash).offset().top - 100
+        }, 500); //скроллим за полсекунды
+      };
+  </script>
 
 </body>
 

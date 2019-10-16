@@ -1,0 +1,21 @@
+.top-bg {
+  height: 200px;
+  margin-left: -15px;
+  margin-right: -15px;
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size: cover;
+}
+
+@media (min-width: $tablet) {
+  .top-bg {
+    height: 300px;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .top-bg {
+    height: 400px;
+    margin: 0;
+  }
+}

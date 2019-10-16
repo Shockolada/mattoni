@@ -2,27 +2,27 @@
   position: relative;
   z-index: 1;
   display: inline-block;
-  // margin: 0 auto;
-  padding: 13px;
-  border: none;
+  padding: 7px 20px;
+  border: 1px solid #8c97a0;
+  border-radius: 30px;  
   font-weight: 500;
+  line-height: 1;
   font-size: 20px;
   text-align: center;
   text-decoration: none;
-  text-transform: lowercase;
-  color: $color-text-white;
-  background-color: $color-accent;
+  color: $color-text;
+  background-color: #ffffff;
   overflow: hidden;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
   cursor: pointer;
 
-  transition: background-color 0.2s linear;
+  transition: border 0.2s linear, color 0.2s linear;
 }
 
 .button:hover,
 .button:focus {
-  background-color: $color-dark;
+  border: 1px solid $color-accent;
+  color: $color-accent;
 }
 
 .button--dark {

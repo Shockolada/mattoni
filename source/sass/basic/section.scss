@@ -1,3 +1,9 @@
 .section {
   margin-bottom: 30px;
 }
+
+@media (min-width: $tablet) {
+  .section {
+    margin-bottom: 50px;
+  }
+}

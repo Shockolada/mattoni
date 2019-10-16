@@ -1,5 +1,6 @@
 .page-footer__wrap {
   width: 100%;
+  margin-top: 30px;
   background-color: #acb5bd;
   color: #ffffff;
 }
@@ -62,6 +63,10 @@
 
 
 @media (min-width: $tablet) {
+  .page-footer__wrap {
+    margin-top: 50px;
+  }
+
   .page-footer__top {
     padding: 15px 0;
   }

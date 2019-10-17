@@ -13,6 +13,7 @@
   color: $color-text;
   background-color: #ffffff;
   overflow: hidden;
+  text-transform: lowercase;
 
   cursor: pointer;
 
@@ -31,8 +32,4 @@
   &:hover {
     background-color: $color-accent;
   }
-}
-
-.button--transparent {
-  background-color: rgba($color-white, 0.35);
 }

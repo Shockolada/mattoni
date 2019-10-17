@@ -1,0 +1,13 @@
+.contact-form {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  padding: 30px;
+  // padding-bottom: 50px;
+}
+
+@media (min-width: $desktopS) {
+  .contact-form {
+    width: calc(50% - 100px);
+    margin-left: 0;
+  }
+}

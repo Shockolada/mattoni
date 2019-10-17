@@ -55,12 +55,13 @@
     margin-bottom: 45px;
   }
 
+  .water-type__links {
+    margin-right: -15px;
+  }
+
   .water-type__link {
     width: auto;
     flex-grow: 1;
-  }
-
-  .water-type__link:not(:last-of-type) {
     margin-right: 15px;
   }
 }

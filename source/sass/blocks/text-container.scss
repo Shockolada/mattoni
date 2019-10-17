@@ -1,0 +1,55 @@
+.text-container {
+  h1,
+  h2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+  }
+
+  thead th {
+    padding: 5px;
+    border-bottom: 10px solid #f4f6f8;
+    text-align: left;
+    font-style: 17px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #54606f;
+  }
+
+  thead th:first-of-type {
+    width: 70%;
+  }
+
+  td {
+    padding: 5px;
+    background-color: #ffffff;
+    border-bottom: 3px solid #f4f6f8;
+    font-style: 17px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .text-container {
+    table {
+      display: inline-table;
+      width: calc(50% - 5px);
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+@media (min-width: $desktopS) {
+  .text-container {
+    table {
+      display: inline-table;
+      width: calc(25%);
+    }
+  }
+}

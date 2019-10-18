@@ -1,0 +1,76 @@
+<div class="cart__title">
+  <div class="cart__img"></div>
+  <div class="cart__desc">Наименование товара</div>
+  <div class="cart__price">Цена за упаковку</div>
+  <div class="cart__count">Количество</div>
+  <div class="cart__total-price">Общая стоимость</div>
+  <div class="cart__bin"></div>
+</div>
+
+<ul class="cart__list">
+  <li class="cart__one-product">
+    <div class="cart__img"><img src="img/34.png" alt=""></div>
+    <div class="cart__mobile-wrapper">
+      <div class="cart__desc">
+        <h3 class="cart__name">mattoni Grand pininfarina 0.33L</h3>
+        <p class="cart__info">Природная минеральная вода газированная</p>
+        <p class="cart__desc-item">Стоимость 1 бутылки: 16,50 лей</p>
+        <p class="cart__desc-item">Упаковка: 24 бутылки, стекло </p>
+      </div>
+      <div class="cart__price"><span class="cart__price-title-mob">Цена за упаковку</span>396,00 лей</div>
+      <div class="cart__count">
+        <div class="number-input">
+          <button class="number-input__btn number-input__minus" type="button"
+            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+          <input class="number-input__input" type="number" value="1" min="0">
+          <button class="number-input__btn number-input__plus" type="button"
+            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+        </div>
+      </div>
+      <div class="cart__total-price"><span class="cart__all-price-title-mob">Общая стоимость</span>792,00 лей</div>
+      <div class="cart__bin">
+        <button class="button cart-btn" type="btn">
+          <svg class="cart-btn__icon" width="24" height="24">
+            <use xlink:href="img/sprite.svg#garbage"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </li>
+
+  <li class="cart__one-product">
+    <div class="cart__img"><img src="img/23.png" alt=""></div>
+    <div class="cart__mobile-wrapper">
+      <div class="cart__desc">
+        <h3 class="cart__name">mattoni 1.5L</h3>
+        <p class="cart__info">Природная минеральная вода газированная</p>
+        <p class="cart__desc-item">Стоимость 1 бутылки: 13,56</p>
+        <p class="cart__desc-item">Упаковка: 6 бутылок, PET</p>
+      </div>
+      <div class="cart__price"><span class="cart__price-title-mob">Цена за упаковку</span>81,36 лей</div>
+      <div class="cart__count">
+        <div class="number-input">
+          <button class="number-input__btn number-input__minus" type="button"
+            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+          <input class="number-input__input" type="number" value="1" min="0">
+          <button class="number-input__btn number-input__plus" type="button"
+            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+        </div>
+      </div>
+      <div class="cart__total-price"><span class="cart__all-price-title-mob">Общая стоимость</span>81,36 лей</div>
+      <div class="cart__bin">
+        <button class="button cart-btn" type="btn">
+          <svg class="cart-btn__icon" width="24" height="24">
+            <use xlink:href="img/sprite.svg#garbage"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </li>
+
+</ul>
+
+<div class="cart__additional-info">
+  <p>Бесплатная доставка по всей молдове</p>
+  <p>Стоимость заказа: <span class="cart__total-summ">873,36</span></p>
+</div>

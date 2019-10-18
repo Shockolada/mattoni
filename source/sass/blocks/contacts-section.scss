@@ -1,0 +1,41 @@
+.contacts-section {
+  margin-top: 30px;
+}
+
+.contacts-section__left {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  background-color: #54606f;
+}
+
+.contacts-section__right {
+  align-items: flex-start;
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  padding-top: 25px;
+  background-color: #7fbfa1;
+}
+
+@media (min-width: $tabletS) {
+  .contacts-section {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .contacts-section {
+    display: flex;
+  }
+
+  .contacts-section__left {
+    width: calc(50% + 100px);
+    margin-left: 0;
+  }
+
+  .contacts-section__right {
+    width: calc(50% - 100px);
+    margin-left: 0;
+    padding-top: 0;
+    padding-left: 25px;
+  }
+}

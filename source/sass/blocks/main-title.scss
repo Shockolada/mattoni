@@ -1,0 +1,12 @@
+.main-title {
+  margin: 30px 0;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media(min-width: $tablet) {
+  .main-title {
+    margin: 45px 0;
+  }
+}

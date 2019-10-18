@@ -1,11 +1,21 @@
 .contact-us__wrap {
-  width: calc(100% + 30px);
-  margin-left: -15px;
-  margin-top: 30px;
+  position: relative;
   padding: 30px;
   background-color: #54606f;
   background-repeat: no-repeat;
   background-size: 0 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 25px;
+    background-image: url('../img/next-mob.png');
+    background-position: center;
+  }
 }
 
 .contact-us {
@@ -43,11 +53,10 @@
 
 @media (min-width: $tabletS) {
   .contact-us__wrap {
-    padding: 50px 30px;
     background-position: 10% 55%;
-    background-size: 350px;
+    background-size: 250px;
   }
-  
+
   .contact-us {
     margin-left: 60%;
   }
@@ -57,11 +66,32 @@
   }
 }
 
+@media (min-width: $tablet) {
+  .contact-us__wrap {
+    background-size: 300px;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .contact-us__wrap {
+
+    &::before {
+      top: 0;
+      left: 100%;
+      right: unset;
+      bottom: 0;
+      width: 25px;
+      height: unset;
+      background-image: url('../img/next.png');
+    }
+  }
+}
+
 @media (min-width: $desktopS) {
   .contact-us__wrap {
-    width: calc(50% + 100px);
-    margin-left: 0;
-    padding-top: 140px;
-    padding-bottom: 180px;
+    padding-top: 120px;
+    padding-bottom: 160px;
+    background-size: 320px;
+    background-position: 10% 52%;
   }
 }

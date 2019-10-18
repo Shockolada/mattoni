@@ -11,8 +11,8 @@
   ================================================== -->
   <main class="page-content">
 
-    <div class="contacts__wrap container">
-      <div class="contact-us__wrap" style="background-image: url('img/bottles.png');">
+    <div class="container contacts-section">
+      <div class="contact-us__wrap contacts-section__left" style="background-image: url('img/bottles.png');">
         <section class="contact-us">
           <h2 class="contact-us__title">Связаться с нами</h2>
           <p class="contact-us__item">ул. Колумна, 25 <br>
@@ -29,25 +29,27 @@
         </section>
       </div>
 
-      <form class="contact-form form form--colored" action="">
-        <p class="form__item">
-          <label for="name">Контактное лицо*</label>
-          <input id="name" type="text">
-        </p>
-        <p class="form__item">
-          <label for="tel">Контактный телефон</label>
-          <input id="tel" type="text">
-        </p>
-        <p class="form__item">
-          <label for="mail">E-mail</label>
-          <input id="mail" type="text">
-        </p>
-        <p class="form__item">
-          <label for="message">Сообщение*</label>
-          <textarea id="message" name="" cols="30" rows="10"></textarea>
-        </p>
-        <button class="button form__btn">Отправить</button>
-      </form>
+      <div class="contacts-section__right">
+        <form class="contact-form form form--colored" action="">
+          <p class="form__item">
+            <label for="name">Контактное лицо*</label>
+            <input id="name" type="text">
+          </p>
+          <p class="form__item">
+            <label for="tel">Контактный телефон</label>
+            <input id="tel" type="text">
+          </p>
+          <p class="form__item">
+            <label for="mail">E-mail</label>
+            <input id="mail" type="text">
+          </p>
+          <p class="form__item">
+            <label for="message">Сообщение*</label>
+            <textarea id="message" name="" cols="30" rows="10"></textarea>
+          </p>
+          <button class="button form__btn contact-form__btn">Отправить</button>
+        </form>
+      </div>
 
     </div>
 

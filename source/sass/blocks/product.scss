@@ -144,6 +144,11 @@
   .product {
     width: calc(100% / 3 - 15px);
   }
+
+  .product__tooltip {
+    position: fixed;
+    transform: translate(0, 0);
+  }
 }
 
 @media (min-width: $desktopS) {

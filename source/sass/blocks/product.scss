@@ -24,6 +24,8 @@
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
+
+  cursor: default;
 }
 
 .product__short-desc {
@@ -32,6 +34,8 @@
   margin-bottom: 50px;
   font-size: 14px;
   font-weight: 500;
+
+  cursor: default;
 }
 
 .product__img {
@@ -97,7 +101,6 @@
 }
 
 .product__tooltip {
-
   font-size: 14px;
   font-weight: 400;
 
@@ -148,6 +151,10 @@
   .product__tooltip {
     position: fixed;
     transform: translate(0, 0);
+  }
+
+  .product__tooltip .close-tooltip {
+    display: none;
   }
 }
 

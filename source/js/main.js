@@ -32,7 +32,6 @@ $(document).ready(function () {
   $(window).resize(getWinSize);
 
   function showTooltipOnHoer() {
-
     // Hover
     $('.product__hover-area').each(function () {
       $(this).mouseover(function () {
@@ -81,22 +80,19 @@ $(document).ready(function () {
       // $('.overlay').fadeIn(200);
     });
   }
-
   if (windowWidth < 940) {
     showTooltipOnClick();
   } else {
     showTooltipOnHoer();
   }
 
-  $(window).resize(function () {
-    if (windowWidth < 940) {
-      showTooltipOnClick();
-      console.log('resize < 940');
-    } else {
-      showTooltipOnHoer();
-      console.log('resize > 940');
-    }
-  });
+  // $(window).resize(function () {
+  //   if (windowWidth < 940) {
+  //     showTooltipOnClick();
+  //   } else {
+  //     showTooltipOnHoer();
+  //   }
+  // });
 
   $('.close-tooltip').click(function () {
     event.preventDefault();

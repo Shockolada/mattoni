@@ -1,17 +1,59 @@
-<form action="">
-  <h2 class="form__title">Контактная информация</h2>
+<form class="form order-form" action="">
+  <h2 class="form__title title">
+    <p class="title__content">
+      Контактная информация
+    </p>
+  </h2>
 
   <p class="form__item">
     <label for="name">Имя*</label>
-    <input id="name" type="text">
+    <input id="name" type="text" required>
+  </p>
+  <p class="form__item">
+    <label for="surname">Фамилия*</label>
+    <input id="surname" type="text" required>
+  </p>
+  <p class="form__item">
+    <label for="email">E-mail*</label>
+    <input id="email" type="email" required>
+  </p>
+  <p class="form__item">
+    <label for="tel">Телефон*</label>
+    <input id="tel" type="tel" required>
   </p>
 
-  <h2 class="form__title">Информация о доставке</h2>
+  <h2 class="form__title">
+    <p class="title__content">
+      Информация о доставке
+    </p>
+  </h2>
 
-  <h2 class="form__title">Комментарий</h2>
+  <p class="form__item">
+    <label for="address">Адрес*</label>
+    <input id="address" type="text" required>
+  </p>
+  <p class="form__item">
+    <label for="city">Город*</label>
+    <input id="city" type="email" required>
+  </p>
+  <p class="form__item">
+    <label for="post">Почтовый код*</label>
+    <input id="post" type="tel" required>
+  </p>
 
-  <div class="captcha"></div>
+  <h2 class="form__title">
+    <p class="title__content">
+      Комментарий
+    </p>
+  </h2>
 
-  <button type="submit">подтвердить заказ</button>
+  <p class="form__item">
+    <label for="message">Сообщение</label>
+    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+  </p>
+
+  <div class="captcha"><img src="img/captcha.jpg" alt=""></div>
+
+  <button class="button" type="submit">подтвердить заказ</button>
 
 </form>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+@@include('./html-partials/head.html')
+
+<body>
+
+  @@include('./html-partials/page-header_index.html')
+
+  <!-- Main Content
+  ================================================== -->
+  <main class="page-content">
+
+    <div class="container order-confirmation">
+      <div class="order-conformation__img">
+        <svg class="order-confirmation__icon" width="80" height="80">
+          <use xlink:href="img/sprite.svg#check-mark"></use>
+        </svg>
+      </div>
+
+      <p class="order-confirmation__note">Благодарим, Ваш заказ был успешно отправлен.</p>
+
+      <a class="order-confirmation__link button" href="index.html">вернуться на главную</a>
+
+    </div>
+
+  </main> <!-- / Main Page Content -->
+
+  @@include('./html-partials/page-footer.html')
+
+
+  <!-- Java Script
+    ================================================== -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

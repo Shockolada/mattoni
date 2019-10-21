@@ -99,4 +99,20 @@ $(document).ready(function () {
     // $('.overlay').fadeOut(200);
     $(this).closest('.product__tooltip').fadeOut(200);
   });
+
+  function footer() {
+    var docHeight = $(window).height(),
+      footerHeight = $('.page-footer__wrap').outerHeight(),
+      footerTop = $('.page-footer__wrap').position().top + footerHeight;
+
+    if (footerTop < docHeight) {
+      $('.page-footer__wrap').css('margin-top', (docHeight - footerTop) + 'px');
+    }
+  }
+
+  footer();
+
+  $(window).resize(function () {
+    footer();
+  });
 });

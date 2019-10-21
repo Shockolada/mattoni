@@ -15,7 +15,8 @@
   margin: 0;
   text-transform: uppercase;
   font-size: 25px;
-  
+  font-weight: 500;
+
   background-color: #f4f6f8;
 
   &::before {
@@ -30,7 +31,7 @@
   }
 }
 
-p.title__content {
+.title__content {
   width: 100%;
   text-align: center;
 }
@@ -53,14 +54,15 @@ p.title__content {
     }
   }
 
-  p.title__content {
+  .title__content {
     padding-right: 50px;
     width: auto;
-    text-align-last: left;
+    text-align: left;
   }
 
   .title__img {
     width: 200px;
     margin: 0;
+    padding-right: 0;
   }
 }

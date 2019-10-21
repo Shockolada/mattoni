@@ -32,27 +32,23 @@ $(document).ready(function () {
   $(window).resize(getWinSize);
 
   function showTooltipOnHoer() {
-    // Hover
-    $('.product__hover-area').each(function () {
-      $(this).mouseover(function () {
-        $(this).parent().find('.product__tooltip').fadeIn(100);
-      });
+    $('.product__hover-area').mouseenter(function () {
+      let tooltip = $(this).parent().find('.product__tooltip');
+      console.log(tooltip);
+
+      tooltip.fadeIn(100);
       $(this).mouseleave(function () {
-        $(this).parent().find('.product__tooltip').fadeOut(100);
+        tooltip.fadeOut(100);
+        $(document).off('mousemove');
       });
-    });
 
-    // Position
-    $(document).mousemove(function (evt) {
-      let mouseY = evt.clientY,
-        mouseX = evt.clientX,
-        tooltipHeight,
-        tooltipWidth;
+      $(document).mousemove(function (evt) {
+        let mouseY = evt.clientY,
+          mouseX = evt.clientX,
+          tooltipHeight = tooltip.outerHeight(),
+          tooltipWidth = tooltip.outerWidth();
 
-      $('.product__tooltip').each(function () {
-        var tooltip = $(this);
-        tooltipHeight = tooltip.outerHeight();
-        tooltipWidth = tooltip.outerWidth();
+          console.log(mouseX);
 
         tooltip.css({
           'left': mouseX,
@@ -86,13 +82,22 @@ $(document).ready(function () {
     showTooltipOnHoer();
   }
 
-  // $(window).resize(function () {
-  //   if (windowWidth < 940) {
-  //     showTooltipOnClick();
-  //   } else {
-  //     showTooltipOnHoer();
-  //   }
-  // });
+  $(window).resize(function () {
+    if (windowWidth < 940) {
+      $('.product__hover-area').off('mouseenter mouseleave');
+      $(document).off('mousemove');
+
+      $('.product__tooltip').css({
+        'left': '50%',
+        'top': '50%'
+      });
+
+      showTooltipOnClick();
+    } else {
+      $('.product__hover-area').off('click');
+      showTooltipOnHoer();
+    }
+  });
 
   $('.close-tooltip').click(function () {
     event.preventDefault();
@@ -109,7 +114,6 @@ $(document).ready(function () {
       $('.page-footer__wrap').css('margin-top', (docHeight - footerTop) + 'px');
     }
   }
-
   footer();
 
   $(window).resize(function () {

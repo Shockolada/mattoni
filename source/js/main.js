@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+  // Menu
   $('.menu__btn').click(function () {
     event.preventDefault();
     $('.menu').slideToggle(200);
@@ -13,28 +14,22 @@ $(document).ready(function () {
       $('.page-header__wrap').removeClass('scrolled');
     }
   });
-});
 
-
-$(document).ready(function () {
-
-  let windowWidth = 0,
-    windowHeight = 0;
+  // Get window size
+  var windowWidth = 0;
 
   function getWinSize() {
     windowWidth = $(window).width();
     windowHeight = $(window).height();
-
-    console.log(windowWidth);
   }
 
   getWinSize();
   $(window).resize(getWinSize);
 
+  // Tooltip 
   function showTooltipOnHoer() {
     $('.product__hover-area').mouseenter(function () {
-      let tooltip = $(this).parent().find('.product__tooltip');
-      console.log(tooltip);
+      var tooltip = $(this).parent().find('.product__tooltip');
 
       tooltip.fadeIn(100);
       $(this).mouseleave(function () {
@@ -43,12 +38,10 @@ $(document).ready(function () {
       });
 
       $(document).mousemove(function (evt) {
-        let mouseY = evt.clientY,
+        var mouseY = evt.clientY,
           mouseX = evt.clientX,
           tooltipHeight = tooltip.outerHeight(),
           tooltipWidth = tooltip.outerWidth();
-
-          console.log(mouseX);
 
         tooltip.css({
           'left': mouseX,
@@ -73,9 +66,9 @@ $(document).ready(function () {
   function showTooltipOnClick() {
     $('.product__hover-area').click(function () {
       $(this).parent().find('.product__tooltip').fadeIn(200);
-      // $('.overlay').fadeIn(200);
     });
   }
+
   if (windowWidth < 940) {
     showTooltipOnClick();
   } else {
@@ -101,10 +94,10 @@ $(document).ready(function () {
 
   $('.close-tooltip').click(function () {
     event.preventDefault();
-    // $('.overlay').fadeOut(200);
     $(this).closest('.product__tooltip').fadeOut(200);
   });
 
+  // Footer 
   function footer() {
     var docHeight = $(window).height(),
       footerHeight = $('.page-footer__wrap').outerHeight(),
@@ -119,4 +112,5 @@ $(document).ready(function () {
   $(window).resize(function () {
     footer();
   });
+
 });

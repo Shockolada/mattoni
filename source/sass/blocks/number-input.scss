@@ -17,6 +17,10 @@
   font-weight: 500;
 }
 
+.number-input__input[type='number'] {
+  -moz-appearance:textfield;
+}
+
 .number-input__input::-webkit-outer-spin-button,
 .number-input__input::-webkit-inner-spin-button {
     display: none;

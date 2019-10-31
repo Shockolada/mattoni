@@ -7,6 +7,8 @@
   height: 30px;
   margin-left: 15px;
   padding: 0;
+
+  overflow: visible;
 }
 
 .cart-btn__icon {
@@ -18,4 +20,13 @@
 .cart-btn:hover .cart-btn__icon,
 .cart-btn:focus .cart-btn__icon {
   fill: $color-accent;
+}
+
+.cart-btn__add-icon {
+  // position: absolute;
+  // top: 0;
+  // left: 50%;
+  // transform: translate(-50%, -110%);
+  // width: 50px;
+  // height: 50px;
 }

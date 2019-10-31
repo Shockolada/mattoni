@@ -1,6 +1,8 @@
 .nav {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   @include list-reset;
   margin-right: -20px;
   margin-bottom: -10px;
@@ -17,6 +19,9 @@
 
 @media (min-width: $tablet) {
   .nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     margin-right: -30px;
   }
 

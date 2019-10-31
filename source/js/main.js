@@ -97,6 +97,86 @@ $(document).ready(function () {
     $(this).closest('.product__tooltip').fadeOut(200);
   });
 
+
+
+  function animateCartAdding(clickedButton) {
+    // var cart;
+    // if (windowWidth < 1200) {
+    //   cart = $('.page-header__basket-mob');
+    // } else {
+    //   cart = $('.page-header__basket');
+    // }
+    // $(window).resize(function () {
+    //   if (windowWidth < 1200) {
+    //     cart = $('.page-header__basket-mob');
+    //   } else {
+    //     cart = $('.page-header__basket');
+    //   }
+    // });
+
+    // // button.find($('.cart-btn'));
+
+    // var icon = this.find($('.cart-btn__icon'));
+
+    // // icon.css('fill','ccc')
+
+    // // .animate({
+    // //     'top': cart.offset().top + 10,
+    // //     'left': cart.offset().left + 10,
+    // //   }, 1000, 'easeInOutExpo');
+
+    //   console.log(clickedButton);
+  }
+
+  function createIconEl(button) {
+    button.append('<svg class="cart-btn__add-icon" width="30" height="30"><use xlink:href="img/sprite.svg#water"></use></svg>');
+  }
+
+  $('.cart-btn').click(function (evt) {
+    evt.preventDefault();
+    createIconEl($(this));
+
+    var cart;
+    if (windowWidth < 1200) {
+      cart = $('.page-header__basket-mob');
+    } else {
+      cart = $('.page-header__basket');
+    }
+    var btnaddcart = $(this);
+    var icon = $(this).find($('.cart-btn__add-icon'));
+
+    icon
+      .css({
+        'opacity': 0.5,
+        'position': 'fixed',
+        'top':  btnaddcart.offset().top + 10,
+        'left': btnaddcart.offset().left + 10,
+        'z-index': 2,
+        // '-webkit-transform': 'translateX(' + '-50% ' + ')',
+        // '-moz-transform': 'translateX(' + '-50% ' + ')',
+        // '-ms-transform': 'translateX(' + '-50% ' + ')',
+        // '-o-transform': 'translateX(' + '-50% ' + ')',
+        // 'transform': 'translateX(' + '-50% ' + ')',
+
+        // '-webkit-transform': 'translate(' + ui.value + ')',
+        // '-moz-transform': 'translate(' + ui.value + ')',
+        // '-ms-transform': 'translate(' + ui.value + ')',
+        // '-o-transform': 'translate(' + ui.value + ')',
+        // 'transform': 'translate(' + ui.value + ')',
+        'width': 50,
+        'height': 50
+      })
+      .animate({
+        'opacity': 1,
+      }, 300)
+      .animate({
+        'top': cart.offset().top + 10,
+        'left': cart.offset().left + 10,
+      }, 500)
+
+    console.log(cart.offset().top)
+  });
+
   // Footer 
   function footer() {
     var docHeight = $(window).height(),
